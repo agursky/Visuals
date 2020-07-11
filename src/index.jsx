@@ -32,12 +32,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <div className='sm-pics'>
-                    {this.props.imgData[this.state.currentArtist].sm.map(function(item, ind) {
-                     return <img key={ind} src={item} />
-                    })}
-                </div>
-                <div className='lg-pics'>
+                <div>
                     {this.props.imgData[this.state.currentArtist].lg.map(function(item, ind) {
                      return <img key={ind} src={item} />
                     })}

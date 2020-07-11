@@ -46,6 +46,7 @@ img {
     width: 100px;
 }
 
+/*
 .sm-pics {
     display: initial;
 }
@@ -53,6 +54,7 @@ img {
 .lg-pics {
     display: none;
 }
+*/
 
 @media screen and (min-width: 768px) {
     .choose {
