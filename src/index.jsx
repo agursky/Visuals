@@ -10,14 +10,14 @@ class App extends React.Component {
             currentArtist: 'Van Gogh', 
             view: false
         };
-        this.chooseArtist = this.chooseArtist.bind(this);
-        this.toggleViewStatus = this.toggleViewStatus.bind(this);
+//        this.chooseArtist = this.chooseArtist.bind(this);
+//        this.toggleViewStatus = this.toggleViewStatus.bind(this);
     }
     
-    toggleViewStatus() {
-        this.setState({view: !(this.state.view)});
-        console.log(this.state.view);
-    }
+//    toggleViewStatus() {
+//        this.setState({view: !(this.state.view)});
+//        console.log(this.state.view);
+//    }
     
     getArtists() {
         var artists = Object.keys(this.props.imgData);
@@ -34,7 +34,7 @@ class App extends React.Component {
         return (
             <div>
                 <div>
-                    {this.props.imgData[this.state.currentArtist].lg.map(function(item, ind) {
+                    {this.props.imgData.map(function(item, ind) {
                      return <img key={ind} src={item} />
                     })}
                 </div>
