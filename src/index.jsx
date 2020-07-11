@@ -21,13 +21,14 @@ class App extends React.Component {
     
     getArtists() {
         var artists = Object.keys(this.props.imgData);
+        console.log(artists);
         return artists;
     }
     
-    chooseArtist(str) {
-        this.setState({currentArtist: str, view: false});
-        console.log(str);
-    }
+//    chooseArtist(str) {
+//        this.setState({currentArtist: str, view: false});
+//        console.log(str);
+//    }
     
     render() {
         return (
@@ -37,8 +38,6 @@ class App extends React.Component {
                      return <img key={ind} src={item} />
                     })}
                 </div>
-                <button onClick={this.toggleViewStatus} className='choose'><i className="fa fa-th" aria-hidden="true"></i></button>
-                <Dialog list={this.getArtists()} clickFunc={this.chooseArtist} viewStatus={this.state.view}/>
             </div>
         )
     }
